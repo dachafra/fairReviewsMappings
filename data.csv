@@ -1,0 +1,369 @@
+,Paper,Authors,Rank,Review,Reviewer,Reviewer Name,Confidence
+1,Towards French smart building code: Compliance checking based on semantic rules,"Nicolas Bus, Ana Roxin, Guillaume Picinbono and Muhammad Fahad",0: (borderline paper),"The authors have presented a very interesting study into automated regulatory compliance for french building codes.
+
+The paper itself is very interesting but to me there are a few things that make it unclear. Critically for me the paper lacked clear examples to illustrate the points the users were making. More specifically:
+-I was unclear how the various topics discussed in Section 3 fit together.
+-I am unclear as to how the pre-processing occurs and how it is defined what is converted and filtered.
+-I am also unclear as to how the translation between natural language and queries actually occurs - can an example of this process be provided
+-I am also unclear as to what the languages used at various stages of the conversion process look like - can some examples be provided.
+-Finally I found section 3.4 hard to understand can we provide some concrete examples.
+
+In short I think the research is relevant and interesting - but the clarity of the communication of the ideas must be improved before the paper can be accepted.",1,,4: (high)
+1,Towards French smart building code: Compliance checking based on semantic rules,"Nicolas Bus, Ana Roxin, Guillaume Picinbono and Muhammad Fahad",2: (accept),"This paper documents development work using semantic web technologies to check IFC building models against French building regulations. The methodology is reasonable and the paper is well structured. I hope authors can present more details regarding the following things:
+
+1. The detailed reasoning process and technologies used. According to Section 3, a preprocess work materializes additional triples for ifcOWL data, then in the case in Section 4 it says FreeSpace instances are created on the fly. Is it triggered by a query? If yes, then how this work is conducted. It is better to explain it with a query listing.
+2. Statistics of the regulatory ontology and filtered IFC ontology.
+3. Performance of pre-processing and tested building models.
+
+A minor: Shouldn’t BCF be BIM Collaboration Format?",2,,4: (high)
+1,Towards French smart building code: Compliance checking based on semantic rules,"Nicolas Bus, Ana Roxin, Guillaume Picinbono and Muhammad Fahad",-2: (reject),"The paper tackles the problem of automatic regulatory checking in the building and construction domain. The problem is relevant and in the scope of the LDAC workshop. However, the paper needs to be significantly improved regarding the overall organization and presentation. Above all, the scientific contribution is not well described and just few hints about the experiments are given.
+
+Abstract
+The abstract is long and confused. “Building code” is ambiguous.
+How the sentence “Finally, IFC allows to describe a system in various distinct ways” is related to the obstacles of code-compliance checking.
+What are “Those possible variants in IFC structure”?
+
+Section 1
+The industrial problem needs to be better introduced and referenced.
+What/who is CSTB?
+Why is the French case relevant?
+Which is the motivation behind the sentence “Taking all those variants into account is a real challenge while trying to automate full checking.”?
+Also the scientific challenges are not well explained.
+The last paragraph needs to be re-written. This “semantic approach” has not been previously introduced.
+What is the meaning and value of the sentence “In the last decade, Semantic Web technologies have been recognized as a promising approach in solving issues unaddressed by other approaches.”?
+
+Section 2
+Section short and poor of contents. Most of, if not all, the references in Sect.2.1 cannot be found in the reference list.
+Are the citations “(Pauwels, et al., 2011 and Farias, et al., 2014)” relevant when talking about BIM in general?
+Regarding the EXPRESS to OWL conversion pattern recommended by bSI there are appropriate references to bSI website, ontology repository and scientific publications.
+MVDXML is not properly introduced.
+If it is written that “Several works introduced a semantic rule engine oriented”, then more than one reference would be expected, together with a brief analysis of the contribution.
+Why isn’t the bSI document “Report on Open Standards for Regulations, Requirements and Recommendations Content” cited? See: https://www.buildingsmart.org/wp-content/uploads/2017/11/17-11-08-Open-Standards-for-Regulation.pdf
+
+Section 3
+This section is poor of scientific contents and details. How could a third party researcher try and replicate the proposed approach?
+What are “IFC variants”? The content of Sect.3.1 is hard to appreciate.
+The sentence “This vocabulary is not designed to deal with performances, requirements and building functionalities.” is very debatable.
+The presentation of the Regulatory ontology is lacking meaningful details.
+The sentence “we convert IFC model into an ifcOWL triplet data-base” needs to be revised. Then, what is the “a class and relations filter”? What is the “geometrical preprocessor”? What is the “semantic preprocessor”?
+In English, “triplet(s)” means one of three children. “Triple(s)” or “RDF triple(s)” should be used.
+Exact names should be used in Figure 1.
+“… as introduced by the Trinity College of Dublin [5].” is not a proper way to give a reference in a scientific paper, unless the document is a project proposal/deliverable acknowledging the expertise of a specific partner.
+
+Section 4
+The test cases are not well introduced and explained, therefore also the results cannot be well appreciated.
+What is the “French national BIM platform”?
+
+Section 5
+“As compared to MVDXML…”: actually no serious comparison with MVDXML has been performed.
+Some of the details discussed in this section would be expected in the previous sections.
+
+Other comments
+There is a mix of reference styles, e.g. [8] and then “(Pauwels, et al., 2011 and Farias, et al., 2014)”.
+Formatting and punctuation to be revised, e.g. no capital letter after semicolon.
+English to be improved, e.g. “Having all actors of the project share the same modeling rules”, “is defined by with ifcOWL concepts”, “put some constraint”",3,,4: (high)
+2,Extending the SAREF ontology for building devices and topology,María Poveda-Villalón and Raúl García-Castro,2 (accept),"Typographical errors: Not detected.
+References and web links: they are ok.
+
+Main comments:
+
+After reading this paper, I understood that this introduces SAREF4BLDG, an extension of the SAREF ontology. The aim of this extension is to fill the gap between the information about the smart appliances related to building/smart home data domain, considering the context of IoT, and building data represented in IFC. The central part describes the steps of the process that have been followed to carry out its development.
+
+The contribution presented in the paper falls within the topics of the LDAC workshop and the content may be of interest to the research community. Likewise, the paper is very well written and the ideas are explained very clearly. However, some aspects should be improved/clarified. For example, it is missing some kind of comparison of the proposed method with respect to the methods followed by other authors carried out to solve similar cases/situations, indicating what are the improvements/advantages. Also, there is a lack of contextualization about possible use cases. For example, when it is argued that in some properties their domain is left open, this may have consequences, for example for the inference. In any case, it would be desirable to further explain the relation between the decisions of the design and their impact on the intended use of SAREF4BLDG.
+
+Finally, it would be good to include some diagrams to support the explanations and make the document more understandable to readers.
+
+With these refinements and considerations, as far as possible, the paper can be accepted.
+
+----------------------------------------------------------------------------------------------
+
+Other minor observations and suggestions to improve the paper:
+
+Page 1
+“Undoubtedly, building related information and building objects play a crucial role in IoT systems and applications due to the need for contextualising IoT information”
+--> Perhaps an example here could help readers have a clearer idea of what this contextualization is about at this point.
+
+Page 2
+“In the particular of SAREF4BLDG no domain experts were part of the project partners,”
+--> At this point of the paper, we know that SAREF4BLDG is an extension of the SAREF ontology,
+but perhaps it should be said before that this was developed in the context of a research project. Otherwise, the reader might wonder which project are referring? What experts? What partners?
+
+Page 2
+“The purpose of the SAREF4BLDG ontology…”
+--> Is it an extension of the SAREF ontology or an ontology in itself? Maybe you could say something like “…an extension created as a separated ontology…” at the beginning of the paper?
+
+Page 2
+“The purpose of the SAREF4BLDG ontology is to adapt the well-known IFC model to web technologies”
+--> “to adapt IFC to web technologies” sounds a bit strange. …maybe to extend the information of IFC models to include smart appliance devices data notations? As far as can be understood from some online documentation from ETSI website, it seems that SAREF4BLDG aims to enable the smart devices of the manufacturers that support the IFC data model to easily communicate with each other. To do so, it provides neutral device descriptions to be shared among various stakeholders...(http://www.etsi.org/deliver/etsi_ts/103400_103499/10341003/01.01.01_60/ts_10341003v010101p.pdf)
+
+Page 2
+“IFC4 is organized by views and in each view several devices could be included.”
+--> views? Maybe you meant layers/domains/parts? perhaps the typical image of the IFC layers could help to identify the domains and subdomains to which you are referring (this is just a slight suggestion)
+
+Page 3
+Paragraphs 2 and 3: perhaps it could be interesting to put the corresponding name of the entity in IFC next to each device name (for example, shading device -> IfcShadingDevice), and also for properties (e.g., “Reference” property) to enable their traceability/provenance. Which is the “Status” property?
+
+Page 3
+“The properties which expected type is defined as “P_TABLEVALUE” were also discarded, for example the property “Spectrum”.
+--> Perhaps a little more context to this statement could be provided. It seems that it jumps to a high level of detail in the IFC schema.
+
+Page 7:
+""Fig. 1. General overview of SAREF4BLDG extension. Adapted from [9]""
+--> Should we assume that the prefix of the classes that are in grey is “s4bldg:XXX” ?
+",1,,
+2,Extending the SAREF ontology for building devices and topology,María Poveda-Villalón and Raúl García-Castro,1 (weak accept),"This paper introduces SAREF4BLDG, the extension of the ETSI Smart Appliances REFerence ontology (SAREF) designed in the context of the ETSI Specialist Task Force 513 as one of the SAREF extensions for the Smart Building domain. It presents the adopted methodology to select and convert Device-related concepts and relations from the Industry Foundational Classes to RDF.
+
+Overall the paper is well motivated, structured, and presents clearly sound design choices. Yet some of the decisions lack some explanation and discussion. This is my only concern about the paper.
+
+- The properties whose expected type is defined as P_TABLEVALUE: please explain why
+- P_SINGLEVALUE: OP to saref:Measurement instead of DP to decimal ? Why ? aren't there ome
+""the property \refrigerant class"" is defined"" and below: a property is defined for ""energy source"" ?
+- From the comment of the property given as example :
+Refrigerant class used by the compressor. CFC: Chlorofluorocarbons. HCFC: Hydrochlorofluorocarbons. HFC: Hydrofluorocarbons.
+ --> why wouldn't that be reprented as an object property and some individual for CFC, HCFC, HFC, defined ?
+
+Minor issues and typo. I spotted several minor typo that I report below, I encourage the authors to read carfully the paper once more.
+
+- the description of SAREF4BLDG doesn't seem to make it OWL-DL, is it due to the complexity of SAREF itself ?
+- the use of the geo ontology could be motivated, and the work cited
+- provo can be cited as recommendation
+- prefixed uris sometimes defined as""rdfs:label"", someimes texttt
+- it can be map -> mapped
+- the properties which expected type -> whose
+- stablished -> established (no that's not spannish :-) )
+- other elements than can -> that
+- Camel Case starting with lowercase -> the dedicated term 'mixedCase' can be used here
+- point the view and the -> point of view..",2,Maxime Lefrançois,
+2,Extending the SAREF ontology for building devices and topology,María Poveda-Villalón and Raúl García-Castro,2 (accept),"The paper at hand discusses the SAREF4BLDG ontology, which aims at bridging the gap between the IFC and the SAREF standards. A special focus is given on extracting ontological requirements and on implementing activities based on the proposed ontology. SAREF4BLDG was developped using the Linked Open Terms methodology, and the ontology is available on the Web under a CC BY 4.0 license.
+
+The Related Work section could've have been improven, as it lacks mentionning other initiatives done in this  field at the W3C (e.g. SOSA/SSN, SEAS, M3, M3-lite, FIESTA-IoT, IoT-O, SAN, oneM2M) and more specifically in the context of the W3C LDAC CG (e.g. the Building Ontology Topology or the PROPS ontology). The links and integration with such ontologies should have been at least mentionned in the context of potential future works. Also the overlapping with ontologies such as GoodRelations or QUDT should be discussed (why not import terms from such ontologies ?)
+
+Only links with the PROV-O and ""geo"" ontologies are discussed.
+Links to existing ifcOWL are defined by means of rdf:seeAlso properties. Is missing a discussion regarding what other properties could have been used.
+
+A discussion regarding possible alignements with other vocabularies would've improved the understanding of why such ontology is needed. Especially as, following the Linked Open Terms methodology, step number 3 considers seraching for existing ontologies ""that best fit the previously-extracted terms (and their synonyms)"". Indeed, this step can also be performed after ontology implementation, but should have been discussed in this paper.
+
+It is also unclear why existing classes from SAREF are extended in SAREF4BLDG. The explanation provided remains unclear: ""This decision has been taken because in the SAREF4BLDG extension these concepts refer to specific sensors and actuators that are placed in or related to buildings.""
+
+It would have been interesting if the authors compared their methodology with the the technical specifications defined by SEAS regarding the definition of SAREF extensions using SEAS reference ontology patterns (given that at least two action items are considered at ETSI for integrating SAREF with SSN).
+
+Still, the paper at hand corresponds to the call defined for this workshop, I am thus in favor of accepting this paper for presentation at the LDAC 2018 workshop.
+
+Additional questions/remarks:
+- The URI for the ""geo"" ontology is missing. Should one understand the wgs84-post vocabulary defined here: http://www.w3.org/2003/01/geo/wgs84_pos# ?
+- The notion of ""interoperability"" should be handled with care. While IFC ensure syntactic interoperability, it does not addresses semantic interoperability. This distinction should be made, instead of using the word ""interoperability"" without specifying exactly what type of interoperability is addressed.
+- Why only consider the subset of IFC classes/properties in relation to devices ?
+
+English revisions/corrections:
+- ""were adopted by SAREF in is second version"" -> ""were adopted by SAREF in ITS second version""
+- ""“flourescent, halogen, etc."" -> ""“flourescent“, “halogen“, etc.""
+- ""https://w3id.org/ifc/IFC4ADD1#ontology"" should be replaced by its IRI: https://w3id.org/ifc/IFC4_ADD1
+- "" have been stablished"" - > "" have been Established""
+
+Rephrazing needed:
+- ""Therefore, mechanisms to facilitate the exchange of data between actors along the different stages of the building life cycle and to provide the required interoperability between tools are needed"" - > ""Are missing mechanisms easing the data exchange between actors thourought the complete building cycle, along with tools for interoperability"".
+- ""a modular approach for transforming a subset of IFC concept is presented, this is the main characteristic of this work compared to existing efforts ""
+- “Reference” property was discarded as it can be map to the element URI (in the sense of identifier) or to a “rdfs:label” in case of need for natural language annotations.""
+
+",3,,
+3,OPM: An ontology for describing properties that evolve over time,"Mads Holten Rasmussen, Maxime Lefrançois, Mathias Bonduel, Christian Anker Hviid and Jan Karlshøj",-1: (weak reject),"The paper presents a new ontology for describing properties that change over time (concretely, in the construction domain) and allow to store the different values and to query them more efficiently. The authors also expose several use cases and how to tackle them using the proposed ontology.
+
+
+Comments:
+
+- Despite it is interesting to introduce the different property modeling patterns proposed, maybe more space could have been used for describing previous work on temporal changing information since is the aim of the ontology (instead of just providing a reference to another paper).
+
+- From the formal point of view, the ontology seems correct, throwing just a minor pitfall on (external) isolated classes in the tool OOPS [1] and reusing other ontologies as recommended. Nevertheless, I do not really see the improvement with regard to using the already existing ""hasTemporalContext"" [2] property of the SEAS Evaluation ontology, or even to adapting other options that allow setting a status, such as Action [3]. Similarly, should not also be a constraint in the ontology that a State is not simultaneously a CurrentState and a Deleted one, such as happens with Assumed and Confirmed? And would not it make sense to add an additional State subclass for past non-deleted states, instead of just considering them States once they are not CurrentStates anymore?
+
+- Additionally, I do not see any use case involving the classes opm:Assumed and opm:Confirmed, and I do not really understand the use of the first one. Is a temporary assumption really a State? Why is it a subclass in the ontology but is not told so in the paper?
+
+- The demo does not work for most datasets tested (just showing the syntax error and ""NB! This query will only work with a triplestore."").
+
+- Although at the beginning of the paper it is said that the ontology is in [4], the links all over the paper (for each class, property...) are redirected to [5], that seems to be a very different version of the ontology.
+
+
+Minor suggestions:
+
+- The title of the ontology is misleading, looks like generic while its design directly targets the construction domain. Although the authors claim it can be adapted to others, just the fact of being an extension of SEAS imposes a domain, and its design really looks focused in the construction domain and difficult to use somewhere else without severe adaptation. Additionally, the name OPM is already taken and well-known in the community [6].
+
+- Not actually an error, but in the first line of page 2, [10,9] should usually be [9,10].
+
+- Missing ')' at the end of paragraph 4 of page 2.
+
+-----------------
+
+[1] http://oops.linkeddata.es
+[2] https://ci.mines-stetienne.fr/seas/EvaluationOntology-1.0#hasTemporalContext
+[3] http://schema.org/Action
+[4] http://www.student.dtu.dk/~mhoras/opm.ttl
+[5] https://raw.githubusercontent.com/w3c-lbd-cg/opm/master/opm.ttl
+[6] Moreau, L., Clifford, et al. (2011). The open provenance model core specification (v1. 1). Future generation computer systems, 27(6), 743-756.",1,,3: (medium)
+3,OPM: An ontology for describing properties that evolve over time,"Mads Holten Rasmussen, Maxime Lefrançois, Mathias Bonduel, Christian Anker Hviid and Jan Karlshøj",2: (accept),"This paper presents an ""Ontology for Property Management"", i.e. management of properties and their values (in a data sense) that change over time. This kind of use case is widespread, and providing modelling patterns to capture these is of high value. The authors provide clear examples of these patterns, in a paper that is generally well-written. The authors also make efforts to ground the work in the AEC field, though the challenges are more universal. The work would prompt a very useful discussion at the workshop and I'd recommend that it's accepted.
+
+Some specific comments:
+
+1. Worth being explicit at the start about terminology, especially to distinguish the various meanings of 'property' and 'property management'. In this context, ""properties that change over time"" makes me think of old buildings that are renovated, and 'property management' as akin to 'facilities management'. Addressing this would help greatly in avoiding confusion.
+
+2. Nice to include the online demo linked in footnote 6.
+
+3. I'm not totally comfortable that the related work is exhaustive regarding alternative modelling patterns.",2,,3: (medium)
+3,OPM: An ontology for describing properties that evolve over time,"Mads Holten Rasmussen, Maxime Lefrançois, Mathias Bonduel, Christian Anker Hviid and Jan Karlshøj",2: (accept),"The paper is easy to read. The language is good understandable, the structure is transparent.
+Apparently, it describes a significant step forwards in representing of semantics of items' properties. In contrast to existing approaches the proposed techniques enables an historical enhancement of property value specifications i.e. it facilitates specification of value changes in time.
+Though developed in particular for specification of building elements the technology can be reused in other knowledge domains.
+What i have been missing while reading id the estimation of the complexity / computability of resulted queries. This may be a significant obstacle of the approach because in the worst case it may cost the scalability of the entire approach. Nevertheless- accept.",3,,4: (high)
+3,OPM: An ontology for describing properties that evolve over time,"Mads Holten Rasmussen, Maxime Lefrançois, Mathias Bonduel, Christian Anker Hviid and Jan Karlshøj",0: (borderline paper),"This paper presents an ontology for describing states and changes in the properties of a dataset. The authors evaluate the ontology through a set of competency questions, and an online demo that show some examples and their answers.
+
+I think this paper tackles and important problem and it's very relevant to the LDAC workshop. However, I honestly found it a little difficult to follow due its structure and verbosity. If accepted, the authors should work on improving its readability. I highlight some of the points I struggled with below.
+
+The paper highlights that its contribution is an ontology for ""enabling a different value association method for building and other properties to account for changes in time"". First, it is not clear to me whether the changes are from the vocabulary point of view (ontology evolution) or if the changes refer to just to the different values that a property may be asserting.
+
+The paper jumps into describing related ontologies without motivating the problem tackled. It's very difficult to understand why the ontologies in section 1.1 are listed without context. Why is property management needed? Can I see some sample scenarios?
+
+The levels of complexity are also introduced without context or motivation. It seems like this is useful in the building domain, but the examples used look unrealistic (by using the example.org namespace). Do these examples really come from use cases from the building community? If so, could they be referenced?
+
+The ontology is described without describing the competency questions that aims to answer. Since competency question represent requirements, it would make more sense if the authors first introduced scenarios with examples, then a list of competency questions that represent the requirements in the domain, and finally the classes and properties used in the ontology to address those competency questions, following by the sparql queries that illustrate the answers.
+
+The ontology is mentioned with a pointer to a file instead of its w3id (footnote 4). Also it doesn't seem to have a human readable documentation. Its content negotiation only addresses ttl at the moment.
+
+Where does the list of competency questions come from? Who has created this set of questions and why are they important?
+
+Competency question 7 talks about simplifying a complex OPM property. Why isn't it possible to have a complex and simplified representation co-existing, and use both for answer queries?
+
+Future work uses a set of acronyms that haven't been described in the text (IFC). The abstract does as well (AEC)",4,,4: (high)
+5,The IFC to Linked Building Data Converter - Current Status,"Mathias Bonduel, Jyrki Oraskari, Pieter Pauwels, Maarten Vergauwen and Ralf Klein",2: (accept),"The paper addresses the problem of converting BIM models into RDF graphs that are usable in terms of overall size and opportunity of isolating sub-models based on the related metadata. The problem is relevant both from an industrial and scientific perspective, tackling a significant gap to be closed before making linked building data technologies really useful in business applications. The topics are well in scope of LDAC workshop.
+The paper is generally well written. However, the organization of the sections can be improved, since the size of the sections is not well balanced. Some parts of the paper have a flavour of Users’ Manual, instead of a scientific publication. The presentation of the approach could be enhanced by discussing (e.g. in Sect.2) the requirements, goals, constraints for an IFCtoLBD converter. Then it can be shown and highlighted how the proposed converter meets the requirements.
+The quantitative analysis of the experiments can be enriched, even without adding further experiments.
+
+*** Section 1
+The sentence “The converted ifcOWL instances (Abox) are structured according to ifcOWL, so they too are large and complex.” can be rephrased. Instances cannot be large and complex. There can be too many instances and the relations between them can be overly complex.
+
+Actually, the recommended ifcOWL conversion is documented in the paper Pauwels et al 2017 (“Enhancing the ifcOWL ontology with an alternative representation for geometric data”).
+The sentence “The development of ontologies (Tbox) only makes sense when they are applied to structure and support RDF data instances (Abox).” is quite strong. Many ontologists would argue that the value of a good ontology doesn’t depend only on its instantiation. The statement can be at least partially true from a practical/engineering point of view.
+
+*** Section 2
+This section is definitely too short if compared with the other ones. Above all, almost nothing is said about the methodology/approach/workflow and basically only a few technical details are given.
+Something like a UML component diagram could be presented.
+Requirements, goals, constraints of the proposed tool should be made explicit in a detailed way.
+How does the tool reuse parts of the IFC-to-RDF converter?
+The comments about PROPS and Geometry cannot be appreciated and they seem misplaced in this section.
+
+*** Section 3
+Details like “Users can launch the IFCtoLBD converter by using…” can be postponed to later sections.
+The relation between the considered LBD modules (BOT, PROPS, PRODUCT) is not explained.
+The sentence “An IFC file can be converted to one RDF file combining all selected LBD modules or …” needs to be better explained. Herein “LBD modules” seems to refer to Abox, but a few line above to Tbox. Moreover, what are the rules employed to decompose the resulting RDF graph based on the Tbox modules? Where are the instances placed (nodes)? What if a triple links two individuals belonging to different Abox modules (edge)?
+The PROPS levels of complexity could be introduced (and better explained) earlier in the paper, since it is not a proper feature of the converter. For example, it is not clear what is meant with “property instanced” and “state instances”. Section 3 can discuss how the proposed converter is able to deal with the different levels of complexity.
+The sentence “and provide essential feedback to the W3C LBD CG properties subgroup.” doesn’t seem to be appropriate in this context. Maybe it can be mentioned in the conclusions.
+
+*** Section 3.2
+Why isn’t the search started from IfcProject?
+How are typed elements (e.g. an instance of IfcColumn related to an instance of IfcColumnType and its properties) handled by the converter?
+When discussing about URI generation, which is the relation between a PRODUCT class and bot:Element/BOT class?
+
+Consider writing “URIs” instead of “URI's”.
+Table 1: the title can be changed into “Mapping between ifcOWL and LBD classes”.
+The Paths P1… P9 could be defined in a table, making explicit the related ifcOWL object properties as done in Listing 3 for P1.
+Listing 3 could be written using generic names instead of ?site and ?building, since the same query can be reused to find any decomposition relation between two objects.
+
+*** Section 3.3
+After the removal of the geometry-related triples, which is the actual benefit of LBD vs ifcOWL? How are considered the triples that would be meaningful if the LBD modules had a full mapping with ifcOWL?
+
+Table 3: an explicit comparison with the ifcOWL-based version can be useful.
+Table 3: it’s not clear the values BOT and PRODUCT apply to all three rows.
+
+What are Listings 5 and 6 compared with to fully appreciate the simplification? Also a quantitative comparison (e.g. query response time) would be interesting.
+
+*** References
+More details about conference location and period can be given for paper n.5.
+The title of reference n.7 is missing.
+
+*** Minor notes
+Is the ORCID code needed in the authors’ list?
+“commercial software exists” -> commercial software tools exist
+“an RDF Abox graph structures” -> an RDF Abox graph structure
+“sets of RDF triples that contains” -> sets of RDF triples that contain
+“IFC schema's” -> IFC schemas
+“as demonstrated in Listing 2.” -> as shown in Listing 2.
+“temporal ifcOWL Abox graph” -> temporary ifcOWL Abox graph
+“temporal graph” -> temporary graph
+IfcBuildingStorey, IfcBuilding, etc. shouldn’t be used in plural form.
+“of the earlier found” -> of the previously found
+“LBD modulair ontologies” -> LBD modular ontologies
+“do not reside in in property” -> do not reside in property",1,,5: (expert)
+5,The IFC to Linked Building Data Converter - Current Status,"Mathias Bonduel, Jyrki Oraskari, Pieter Pauwels, Maarten Vergauwen and Ralf Klein",2: (accept),"The paper reports the current status of ongoing work related to conversion of building data into Linked Data. It addresses one of the central problems in the ifcOWL-based approach, namely the excessive complexity of the resulting RDF graphs, which makes the utilization of the data unnecessarily difficult for potential applications.
+
+This problem stems from the original goals behind the definition of IFC, when the focus was in the geometrically accurate exchange of complete, discipline-specific BIM models during the design stage of a construction project. In the later stages of construction lifecycle the data if often needed in a more granular manner, in task-relevant structures, and connected across disciplines and external data sources. There has been attempts to provide simplified views to ifcOLW-based data (simpleBIM) or to simplify access to it (BimSPARQL). The approach in this paper is to make the IFC data more accessible by converting it into simpler ontologies.
+
+The paper starts with introductions into BIM, IFC, ifcOWL and related converters. The problem of the complexity of ifcOWL-based data is presented and some previous solutions mentioned (IfcWoD and simpleBIM). New ontologies - BOT, PROPS, and PRODUCT - are presented as a new solution. At this point more careful justifications and objectives for this approach should be presented - now this approach is introduced as just another thing to try.
+
+The section about methodology seems insufficient as well. The best I can infer from the section and the preceding text is that the method is to extend the existing IFC-to-RDF converter to an IFC-to-LBD converter that produces data according to the BOT, PROPS, and PRODUCT ontologies, instead of ifcOWL. Perhaps the section could be renamed or text restructured?
+
+The most interesting part of the results section is the detailed description of the conversion process, which describes how the data based on BOT, PROPS, and PRODUCT is derived from the ifcOWL-based data. At least, I feel I can understand how the system works.
+
+Finally, the implementation is evaluated with one publicly available IFC model. The evaluation criteria are the file size of the conversion and the simplification of SPARQL queries. This part of the paper is somewhat unsatisfactory. Firstly, I think that file size should not be a primary objective in this kind of effort. The question is not of any kind of big data and, in any case, the data will be managed in databases in any real applications. The usage of data is in many use cases granular, focused on small set of objects at time. If the problem are processing times that relate to file sizes, then they should be used as the primary critera. Secondly, the SPARQL queries presented in the paper should be contrasted to something else, such as SPARQL queries against ifcOWL or BimSPARQL queries, or something. Simply presenting the queries does not really show anything.
+
+In my view the most important objectives of this kind of effort are conceptual clarity, separation of concerns, and ease-of-use of the data by applications. They can be difficult to quantify but they would still have provided a better target for the paper. Of course, much of the eventual benefits of the approach will depend on the quality of BOT, PROPS, and PRODUCT ontologies when compared to ifcOWL - how much do they add clarity, do they simplify the data (without oversimplifying it and requiring workarounds), do they unintentionally add new kind of complexity, how well the ontologies work together, and so on. In the future the converter presented in this paper may help to answer these questions.
+
+An aspect that might have been discussed in the paper is the possibility to link the data based on the new ontologies with the ifcOWL-based data which it was derived from.
+
+Regardless of the comments above, I see a lot of practical relevance in this line of work. The developments of open-source tools such as IFC-to-LBD converter is important for further research and development in the domain of Linked Building Data and possibly even useful for potential applications in the areas of built environments. I believe that it is important that the workshop audience is aware of this development and its current status, and therefore recommend the acceptance of the paper.
+
+The quality of writing is generally ok. I spotted a couple of minor typos:
+- p.2: ""Nemetschek Tekla"" (what an oxymoron)
+- p.8: ""in in""",2,,4: (high)
+6,An IFC-based interoperable framework for building linked-data,"José L. Hernández, Pedro Martín Lerones, Sonia Álvarez, Peter Bonsma, Andre van Delft, Richard Deighton and Jan-Derrick Braun",0: (borderline paper),"The paper describes an interoperability framework to support the integration of data sources from multiple domains. It also describes how dynamic and static data can be integrated using an IFC-based it solution.
+
+Data interoperability is one of the topics of LDAC, however, this paper is missing or not addressing any use of Semantic Web stack or Linked Data methods to solve the data interoperability which one may expect of a LDAC contribution.
+
+It would be nice to expand the paper and include details of the methodology to merge digital information self-inspection purposes with BIM models. In particular, how the BIM/IFC model is enriched with PLY files. Thus, your experience in integrating this kind of data would be useful to be described and compared with linked-data methodologies for data integration.",1,,4: (high)
+6,An IFC-based interoperable framework for building linked-data,"José L. Hernández, Pedro Martín Lerones, Sonia Álvarez, Peter Bonsma, Andre van Delft, Richard Deighton and Jan-Derrick Braun",2: (accept),"This article focuses on the description of the framework to facilitate the connection between BIM data and multiple and heterogeneous data such as point cloud or real time sensors data.
+The author explained cleary what are the objectives of the research in relation to the topics of the workshop.
+
+In Introduction, it should be good add one more reference to compare your research with others that already investigated data integration using BIM domain and Middleware platform. (e.g. DIMMER project)
+
+Sholud be interesting to understand how the middleware adapts data in proper format useful for BIM platform. Did the INSITER project find a common open language to share both graphical and alphanumerical information in one way?
+In the article the creation of a IFC mapping file to preserve geometrical and alphanumerical BIM data is not metioned. So, did the interoperable process was developed without data loss?
+
+Figure 4 should be described better because it is difficult to understand which is the main difference between the right and the left picture.
+Figure 5 needs to be improved because the legend that refers to the bar chart is not readable and the kind of two diagrams is not clear. Problably it is necessary implement the description of this picture in the text. Moreover, it is not clear where integration of BIM data with sensor data occurs",2,,4: (high)
+6,An IFC-based interoperable framework for building linked-data,"José L. Hernández, Pedro Martín Lerones, Sonia Álvarez, Peter Bonsma, Andre van Delft, Richard Deighton and Jan-Derrick Braun",2: (accept),"The document would benefit from an edit by a native English speaker.
+
+Strengths:
+The paper proposes and demonstrates a strong, flexible , open and extensible approach to integration of heterogeneous building data.
+
+Weaknesses:
+Section 1, paragraph 3: This paragraph could also benefit from noting that the industry can benefit from a rigorous definition of the purpose of a given BIM in order to promote reusability of data between stakeholders.
+
+Section 2, adaption layer: This paragraph should define the transformations that take place in a more precise manner. The reader is left thinking that all data is transformed into IFC format when this is not the case. Time series data is processed in a manner so that it aligns with IFC etc.
+
+Section 3 would benefit from additional detail as it is quite short.
+
+The text within Figures 4 and 5 is very difficult to read. Please adjust the images accordingly.
+
+Section 5 needs a short paragraph that details the future work.",3,,4: (high)
+7,Semantic Encoding of Construction Regulations,Thomas Beach and Yacine Rezgui,3: (strong accept),"The paper presents an ontology and an approach encode construction regulations into interoperable formats in which a set of rules for checking the regulations can be executed. The presented work is definitely in line with the workshop topic and it would be worth having it further presented.
+
+I find specially interesting for discussion during the workshop the following points for which I'd like to know more but I'm aware of the page limit of the paper:
+
+.- More details about the process follows to transform regulations to the OWL ontology. For example, if any methodology for building ontologies has been followed.
+.- Whether the T-Box is available and open. In this case, a pointer to such resource (and other, for example the rules) should be added to the camera ready version of the paper.
+.- Analysis of the system design for adding more regulations in terms of extensibility, scalability of the rules, potential problems with regulation from different countries, etc.
+.- How would be Multilingualism would be handle?
+
+Just as a minor comment, I'd like to point out that the use of ""A-Box ontology"" and ""T-Box ontology"" might sounds artificial in some scenarios. In some communities a knowledge base is said to be composed of the ontology (also called T-Box) and the data (A-Box). Therefore, naming the data T-Box ontology might suggest that an ontology is defined in that artefact when in fact it is usually the instantiation of some ontology defined in another artefact.
+
+Typos:
+
+.- Reference ""[4]"" in page 1 is intended to be ""4"" or ""5""?
+.- Page 4 ""... figure 3, please not that..."" -> ""please note..."" ?",1,,3: (medium)
+7,Semantic Encoding of Construction Regulations,Thomas Beach and Yacine Rezgui,2: (accept),"The work presented addresses a highly relevant problem that of encoding construction regulations which can lead to automated compliance checking systems. A semantic building regulation management system is introduced along with the applications to two use cases: (i) the Secure by Design regulation, and (ii) Part L of the UK Building Regulations.
+
+The components of a practical implementation that has been developed and tested are presented. The problem and the use cases are of interest to the LDAC audience.
+
+Suggestions for improving the paper:
+Ø Consider describing how the RASE tags map to verbal forms used in the standards. Also, consider discussing the case when more complex linguistic structures are developed.
+Ø The discussion on alignment and the generation of data mappings and how this is achieved through the user interface can be expanded to make the argument more concrete.
+Ø Discuss how units/unit conversion is handled by your tools.
+Ø ""An example of rule execution is shown in Figure 6"" This can be expanded, and more details on rule execution and the handling of different RASE tags can be provided.
+Ø There is explicit mention of two use cases, but most of the presentation concerns the Secure by Design regulation. Consider including a more extensive description of your work on Part L and the lessons learnt (along with the challenges faced) in both use cases.
+Ø Review the document for typos and edit for clarity. For example: Page 2 (al -> Remove), various pages (IFCOwl -> ifc OWL), page 2 (extract -> extracted), Page 3, top (our approach -> of our approach), Page 4 (not -> note that for brevity), Page 6 (""was shown in Figure 1"" -> correct reference), review references (e.g. ref 11,, 17, 18).
+Ø Align better the placement of Figures with the narrative to enhance the legibility of the paper.",2,,3: (medium)
